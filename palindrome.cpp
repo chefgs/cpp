@@ -11,10 +11,7 @@ class palin {
   {
     out.assign(s.rbegin(), s.rend());
 
-    cout << "Out:" <<out;
-    cout << "\n";
-    cout << "s::" <<s;
-    cout << "\n";
+    cout << "Reversed:" <<out;
    
     if (s.compare(out) == 0)
       return 0;
@@ -26,14 +23,17 @@ class palin {
 int main()
 {
   palin p;
+  cout << "Enter s:";
   cin >> p.s;
   int i = p.palindrome(p.s);
   if (i == 0) {
-    cout << "Palindrome";
+    cout << "\n";
+    cout << "It is Palindrome";
     cout << "\n";
   }
   else {
-    cout << "Not a Palindrome";
+    cout << "\n";
+    cout << "It is Not a Palindrome";
     cout << "\n";
   }
   return 0;
